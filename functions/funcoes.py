@@ -8,6 +8,7 @@ from time import sleep
 # ---------------------------
 IMAGEM_ALVO = os.path.join("image", "telainicial.PNG")
 
+
 def executar_comando(codigo):
     nome_janela = "WMS Alcis -"
     janelas = [win for win in gw.getWindowsWithTitle(
@@ -61,8 +62,7 @@ def Associar():
     procurar_e_clicar()
     executar_comando("gt100")
     time.sleep(2)
-    if not meu_alert('Clic "OK" para avançar!'):
-        return
+    procurar_e_clicar()
     time.sleep(0.3)
     executar_comando("AF200")
 
@@ -71,8 +71,7 @@ def reservar():
     procurar_e_clicar()
     executar_comando("SD280")
     time.sleep(2)
-    if not meu_alert('Clic "OK" para avançar!'):
-        return
+    procurar_e_clicar()
     executar_comando("AK300")
     time.sleep(2)
     if not meu_alert('Clic "OK" para avançar!'):
@@ -98,12 +97,10 @@ def Expedição():
     procurar_e_clicar()
     executar_comando("AF510")
     time.sleep(2)
-    if not meu_alert('Clic "OK" para avançar!'):
-        return
+    procurar_e_clicar()
     executar_comando("AF540")
     time.sleep(2)
-    if not meu_alert('Clic "OK" para avançar!'):
-        return
+    procurar_e_clicar()
     executar_comando("AK100")
     if not meu_alert('Clic "OK" para avançar!'):
         return
@@ -122,15 +119,12 @@ def recebimento():
     procurar_e_clicar()
     executar_comando("GT100")
     time.sleep(2)
-    if not meu_alert('Clic "OK" para avançar!'):
-        return
+    procurar_e_clicar()
     executar_comando("WF100")
     time.sleep(2)
-    if not meu_alert('Clic "OK" para avançar!'):
-        return
+    procurar_e_clicar()
     executar_comando("WF230")
-    if not meu_alert('Clic "OK" para avançar!'):
-        return
+    procurar_e_clicar()
     executar_comando("WE100")
     sleep(2)
     if not meu_alert('Clic "OK" para avançar!'):
@@ -150,13 +144,11 @@ def finalizar_recebimento():
     procurar_e_clicar()
     executar_comando("WE150")
     time.sleep(2)
-    if not meu_alert('Clic "OK" para avançar!'):
-        return
+    procurar_e_clicar()
     time.sleep(0.3)
     executar_comando("WF200")
     time.sleep(2)
-    if not meu_alert('Clic "OK" para avançar!'):
-        return
+    procurar_e_clicar()
     executar_comando("GT100")
 
 
@@ -164,22 +156,24 @@ def finalizar_expedicao():
     procurar_e_clicar()
     executar_comando("LS123")
     time.sleep(2)
-    if not meu_alert('Clic "OK" para avançar!'):
-        return
+    procurar_e_clicar()
     time.sleep(0.3)
     executar_comando("GT100")
     time.sleep(2)
-    if not meu_alert('Clic "OK" para avançar!'):
-        return
+    procurar_e_clicar()
     executar_comando("AK100")
+
+
+def finalizar_faturamento():
+    procurar_e_clicar()
+    executar_comando("AF570")
 
 
 def Cancelamento_Pedido():
     procurar_e_clicar()
     executar_comando("AK100")
     time.sleep(2)
-    if not meu_alert('Clic "OK" para avançar!'):
-        return
+    procurar_e_clicar()
     executar_comando("AF550")
     time.sleep(2)
 
@@ -215,4 +209,3 @@ def procurar_e_clicar(IMAGEM_ALVO=IMAGEM_ALVO, max_tentativas=5):
 
     print("🚫 Imagem não localizada após várias tentativas.")
     return False
-

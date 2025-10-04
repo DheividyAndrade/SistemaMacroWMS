@@ -24,6 +24,7 @@ from functions.funcoes import (
     finalizar_expedicao,
     Cancelamento_Pedido,
     verificar_BLOK_AVA,
+    finalizar_faturamento,
 )
 
 
@@ -61,11 +62,13 @@ def criar_interface():
             "recebimento ⭐": recebimento,
             "Finalizar Recebimento ▶️": finalizar_recebimento,
             "Finalizar Expedicao ▶️": finalizar_expedicao,
-            "Cancelamento Pedido ❌": Cancelamento_Pedido,
+            "Finalizar Faturamento ▶️": finalizar_faturamento,
+            
         },
         # Página 2
         {
             "Verificar Blokc AVA ❔": verificar_BLOK_AVA,
+            "Cancelamento Pedido ❌": Cancelamento_Pedido,
         }
     ]
 
