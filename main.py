@@ -25,9 +25,9 @@ from functions.funcoes import (
     Cancelamento_Pedido,
     verificar_BLOK_AVA,
     finalizar_faturamento,
+    Erro_Motorista,
+    Desbloquear_UZ,
 )
-
-
 
 
 # Configurar CustomTkinter
@@ -63,11 +63,13 @@ def criar_interface():
             "Finalizar Recebimento ▶️": finalizar_recebimento,
             "Finalizar Expedicao ▶️": finalizar_expedicao,
             "Finalizar Faturamento ▶️": finalizar_faturamento,
-            
+
         },
         # Página 2
         {
+            "Desbloquear UZ 🔓": Desbloquear_UZ,
             "Verificar Blokc AVA ❔": verificar_BLOK_AVA,
+            "Erro Motorista ❗": Erro_Motorista,
             "Cancelamento Pedido ❌": Cancelamento_Pedido,
         }
     ]

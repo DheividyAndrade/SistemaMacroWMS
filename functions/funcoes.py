@@ -48,6 +48,11 @@ def reconferir_uz():
     executar_comando("WE150")
 
 
+def Desbloquear_UZ():
+    procurar_e_clicar()
+    executar_comando("QK100")
+
+
 def etiqueta_uz():
     procurar_e_clicar()
     executar_comando("SF110")
@@ -181,6 +186,11 @@ def Cancelamento_Pedido():
 def verificar_BLOK_AVA():
     procurar_e_clicar()
     executar_comando("LS200")
+
+
+def Erro_Motorista():
+    procurar_e_clicar()
+    executar_comando("gt600")
 
 
 def procurar_e_clicar(IMAGEM_ALVO=IMAGEM_ALVO, max_tentativas=5):
