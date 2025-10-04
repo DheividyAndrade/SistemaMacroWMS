@@ -28,30 +28,37 @@ def executar_comando(codigo):
 
 
 def verificar_uz_faltando():
+    procurar_e_clicar()
     executar_comando("LS123")
 
 
 def verificar_empdoc():
+    procurar_e_clicar()
     executar_comando("AK400")
 
 
 def coletor():
+    procurar_e_clicar()
     executar_comando("RF200")
 
 
 def reconferir_uz():
+    procurar_e_clicar()
     executar_comando("WE150")
 
 
 def etiqueta_uz():
+    procurar_e_clicar()
     executar_comando("SF110")
 
 
 def etiqueta_variadas():
+    procurar_e_clicar()
     executar_comando("SD181")
 
 
 def Associar():
+    procurar_e_clicar()
     executar_comando("gt100")
     time.sleep(2)
     if not meu_alert('Clic "OK" para avançar!'):
@@ -61,6 +68,7 @@ def Associar():
 
 
 def reservar():
+    procurar_e_clicar()
     executar_comando("SD280")
     time.sleep(2)
     if not meu_alert('Clic "OK" para avançar!'):
@@ -73,10 +81,12 @@ def reservar():
 
 
 def Cadastro_Motorista():
+    procurar_e_clicar()
     executar_comando("gt800")
 
 
 def Liberar_EMP():
+    procurar_e_clicar()
     executar_comando("SD380")
     sleep(1)
     pyautogui.hotkey('f11')
@@ -85,6 +95,7 @@ def Liberar_EMP():
 
 
 def Expedição():
+    procurar_e_clicar()
     executar_comando("AF510")
     time.sleep(2)
     if not meu_alert('Clic "OK" para avançar!'):
@@ -108,6 +119,7 @@ def Expedição():
 
 
 def recebimento():
+    procurar_e_clicar()
     executar_comando("GT100")
     time.sleep(2)
     if not meu_alert('Clic "OK" para avançar!'):
@@ -135,6 +147,7 @@ def recebimento():
 
 
 def finalizar_recebimento():
+    procurar_e_clicar()
     executar_comando("WE150")
     time.sleep(2)
     if not meu_alert('Clic "OK" para avançar!'):
@@ -162,6 +175,7 @@ def finalizar_expedicao():
 
 
 def Cancelamento_Pedido():
+    procurar_e_clicar()
     executar_comando("AK100")
     time.sleep(2)
     if not meu_alert('Clic "OK" para avançar!'):
@@ -171,6 +185,7 @@ def Cancelamento_Pedido():
 
 
 def verificar_BLOK_AVA():
+    procurar_e_clicar()
     executar_comando("LS200")
 
 
