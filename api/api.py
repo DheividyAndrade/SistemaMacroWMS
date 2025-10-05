@@ -13,9 +13,9 @@ ctk.set_appearance_mode("Dark")  # Modos: "System", "Dark", "Light"
 ctk.set_default_color_theme("blue")  # Temas: "blue", "green", "dark-blue"
 
 IMAGEM_ALVO = os.path.join("image", "logo.jpg")
-ARQUIVO_CREDENCIAIS = 'soy-surge-397101-970c2a316ba9.json'
-ID_PLANILHA = '1M-VbVx94Y86uNnBUXDjPoEk1VB4kF6YyIQ8n9nkad2k'
-NOME_ABA = 'Página1'
+ARQUIVO_CREDENCIAIS = ''
+ID_PLANILHA = ''
+NOME_ABA = ''
 ARQUIVO_CHAVE_SALVA = 'chave_acesso.txt'
 
 # ========== SPLASH SCREEN ==========
