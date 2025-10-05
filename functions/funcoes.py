@@ -117,14 +117,14 @@ def Expedição():
     executar_comando("AK100")
     if not meu_alert('Clic "OK" para avançar!'):
         return
-    os.system(r'"C:\Program Files\Google\Chrome\Application\chrome.exe"')
+    os.system(r'""')
     sleep(0.3)
     pyautogui.click(533, 518)
     sleep(0.3)
     pyautogui.hotkey('ctrl', 't')
     sleep(0.3)
     pyautogui.typewrite(
-        'https://pwa.alcis.com.br/INTERLOG/conteudo/principal.aspx')
+        '')
     pyautogui.press('enter')
 
 
@@ -148,14 +148,14 @@ def recebimento():
     sleep(2)
     if not meu_alert('Clic "OK" para avançar!'):
         return
-    os.system(r'"C:\Program Files\Google\Chrome\Application\chrome.exe"')
+    os.system(r'"')
     sleep(0.3)
     pyautogui.click(533, 518)
     sleep(0.3)
     pyautogui.hotkey('ctrl', 't')
     sleep(0.3)
     pyautogui.typewrite(
-        'https://pwa.alcis.com.br/INTERLOG/conteudo/principal.aspx')
+        '')
     pyautogui.press('enter')
 
 
@@ -223,9 +223,9 @@ def faturar_stine():
 
 def login_porta_admim():
     # portaria
-    os.system(r'"C:\Program Files\Google\Chrome\Application\chrome.exe"')
+    os.system(r'""')
     sleep(3)
-    pyautogui.typewrite('https://auth.lpht.com/login?redirect=https%3A%2F%2Fwarehouse.lpht.com%2Findex')
+    pyautogui.typewrite(')
     sleep(1)
     pyautogui.press('enter')
     sleep(3)
@@ -233,11 +233,11 @@ def login_porta_admim():
     sleep(0.3)
     pyautogui.hotkey('tab')
     sleep(0.3)
-    pyautogui.typewrite('WHG13001')
+    pyautogui.typewrite('')
     sleep(0.3)
     pyautogui.hotkey('tab')
     sleep(0.3)
-    pyautogui.typewrite('Tms123456.')
+    pyautogui.typewrite('')
     sleep(1)
     if not meu_alert('Resolva o Calculo e Clic "OK"'):
         return
@@ -246,18 +246,18 @@ def login_porta_admim():
     # ADM
     pyautogui.hotkey('ctrl', 'shift', 'n')
     sleep(1)
-    pyautogui.typewrite('https://auth.lpht.com/login?redirect=https%3A%2F%2Fwarehouse.lpht.com%2Findex')
+    pyautogui.typewrite('')
     pyautogui.press('enter')
     sleep(3)
     pyautogui.hotkey('tab')
     sleep(0.3)
     pyautogui.hotkey('tab')
     sleep(0.3)
-    pyautogui.typewrite('WHG11001')
+    pyautogui.typewrite('')
     sleep(0.3)
     pyautogui.hotkey('tab')
     sleep(0.3)
-    pyautogui.typewrite('Interlog.2025')
+    pyautogui.typewrite('')
     if not meu_alert('Resolva o Calculo e Clic "OK"'):
         return
     pyautogui.press('enter')
