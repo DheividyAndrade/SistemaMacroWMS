@@ -27,6 +27,8 @@ from functions.funcoes import (
     finalizar_faturamento,
     Erro_Motorista,
     Desbloquear_UZ,
+    login_porta_admim,
+    faturar_stine,
 )
 
 
@@ -71,6 +73,8 @@ def criar_interface():
             "Verificar Blokc AVA ❔": verificar_BLOK_AVA,
             "Erro Motorista ❗": Erro_Motorista,
             "Cancelamento Pedido ❌": Cancelamento_Pedido,
+            "Faturar Stine 💲": faturar_stine,
+            "Login Porta Admin 🔑": login_porta_admim,
         }
     ]
 
