@@ -14,3 +14,5 @@ Por enquanto temos uma pequena quantidade de funcionalidades, com 2 paginas de f
 
 <img width="448" height="310" alt="image" src="https://github.com/user-attachments/assets/c70645dc-94d2-47e8-9d0a-d5d54cb4bd7b" />
 
+<img width="454" height="67" alt="image" src="https://github.com/user-attachments/assets/80099e99-69d1-4044-ab34-720c1b2d66f8" />
+
