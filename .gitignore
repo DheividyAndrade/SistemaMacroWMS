@@ -1,0 +1,38 @@
+# Credenciais e configurações sensíveis
+*.json
+*.key
+*.pem
+*.crt
+*.env
+.env.local
+.env.production
+.env.development
+config.json
+service-account-*.json
+soy-surge-*.json
+credentials/
+secrets/
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+
+# Dependências
+node_modules/
+dist/
+build/
+
+# Arquivos do sistema
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Arquivos temporários
+*.tmp
+*.temp
