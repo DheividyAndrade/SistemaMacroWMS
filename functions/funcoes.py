@@ -6,6 +6,8 @@ from alerts.alerta import meu_alert
 from time import sleep
 # Funções do WMS
 # ---------------------------
+
+
 IMAGEM_ALVO = os.path.join("image", "telainicial.PNG")
 
 

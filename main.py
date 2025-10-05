@@ -3,6 +3,12 @@ import customtkinter as ctk
 import tkinter as tk
 import threading
 import os
+import sys
+import pyautogui
+import time
+from api import api  # Certifique-se de que api.py está no diretório correto
+
+
 # from imagesearch import telainicial  # Removido devido a erro de importação
 
 # Importando funções do WMS
@@ -32,6 +38,7 @@ from functions.funcoes import (
 )
 
 
+executar_api = True
 # Configurar CustomTkinter
 ctk.set_appearance_mode("Dark")
 ctk.set_default_color_theme("blue")
