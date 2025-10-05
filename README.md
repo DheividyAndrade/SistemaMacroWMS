@@ -12,4 +12,5 @@ alterações tranquilamente durante o processo.
 
 Por enquanto temos uma pequena quantidade de funcionalidades, com 2 paginas de funcionalidades. o app segue em produção, mais já funcional.
 
-<img width="443" height="679" alt="image" src="https://github.com/user-attachments/assets/f1c78df4-cdf0-4d2d-b4f7-0d8c39070482" />
+<img width="448" height="310" alt="image" src="https://github.com/user-attachments/assets/c70645dc-94d2-47e8-9d0a-d5d54cb4bd7b" />
+
