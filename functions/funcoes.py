@@ -202,12 +202,58 @@ def Cancelamento_Pedido():
 
 def verificar_BLOK_AVA():
     procurar_e_clicar()
-    executar_comando("LS200")
+    executar_comando("QK100")
 
 
 def Erro_Motorista():
     procurar_e_clicar()
     executar_comando("gt600")
+
+
+def faturar_stine():
+    executar_comando("AF100")
+    sleep(1)
+    if not meu_alert('Clic "OK" para avançar!'):
+        return
+    executar_comando("AF560")
+    sleep(1)
+
+
+def login_porta_admim():
+    # portaria
+    os.system(r'"C:\Program Files\Google\Chrome\Application\chrome.exe"')
+    sleep(3)
+    pyautogui.typewrite('https://auth.lpht.com/login?redirect=https%3A%2F%2Fwarehouse.lpht.com%2Findex')
+    sleep(1)
+    pyautogui.press('enter')
+    pyautogui.hotkey('tab')
+    sleep(0.5)
+    pyautogui.hotkey('tab')
+    sleep(0.3)
+    pyautogui.typewrite('WHG13001')
+    sleep(0.3)
+    pyautogui.hotkey('tab')
+    pyautogui.typewrite('Tms123456.')
+    sleep(1)
+    pyautogui.press('enter')
+    sleep(1)
+    # ADM
+    pyautogui.hotkey('ctrl', 'shift', 'n')
+    sleep(1)
+    pyautogui.typewrite('https://auth.lpht.com/login?redirect=https%3A%2F%2Fwarehouse.lpht.com%2Findex')
+    sleep(1)
+    pyautogui.press('enter')
+    pyautogui.hotkey('tab')
+    sleep(0.5)
+    pyautogui.hotkey('tab')
+    sleep(0.3)
+    pyautogui.typewrite('WHG11001')
+    sleep(0.3)
+    pyautogui.hotkey('tab')
+    pyautogui.typewrite('Interlog.2025')
+    sleep(1)
+    pyautogui.press('enter')
+    sleep(1)
 
 
 def procurar_e_clicar(IMAGEM_ALVO=IMAGEM_ALVO, max_tentativas=5):
